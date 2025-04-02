@@ -1,0 +1,373 @@
+/* Sky Blue Theme Colors */
+:root {
+    --primary-color: #75c6ef; /* Sky blue */
+    --primary-dark: #4a9fd8;
+    --primary-light: #a8e0ff;
+    --bg-color: #f0f8ff;
+    --text-color: #333;
+    --text-light: #666;
+    --accent-color: #1e88e5;
+    --border-color: #ddd;
+    --card-bg: #ffffff;
+    --header-gradient-start: #75c6ef;
+    --header-gradient-end: #4a9fd8;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-end));
+    color: white;
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.tabs li {
+    flex: 1;
+    text-align: center;
+}
+
+.tab {
+    display: block;
+    padding: 16px 10px;
+    color: var(--text-color);
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab:hover {
+    color: var(--primary-dark);
+}
+
+.tab.active {
+    color: var(--primary-dark);
+    border-bottom-color: var(--primary-dark);
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    flex: 0 0 200px;
+}
+
+.avatar-placeholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.skills-list li {
+    background-color: var(--primary-light);
+    color: var(--accent-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    height: 180px;
+    background-color: var(--primary-light);
+}
+
+.project-card h3 {
+    padding: 15px 15px 5px;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+    color: var(--text-light);
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+    padding: 0 15px 15px;
+}
+
+.more-projects {
+    text-align: center;
+}
+
+/* Resume Section */
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-item {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 2px solid var(--primary-light);
+}
+
+.resume-place, .resume-date {
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.resume-date {
+    font-style: italic;
+}
+
+.resume-download {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Contact Section */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-dark);
+    margin-right: 10px;
+    width: 20px;
+}
+
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-dark);
+    outline: none;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.button.large {
+    padding: 12px 24px;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .tab {
+        padding: 10px;
+    }
+}

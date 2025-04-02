@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p class="tagline">Web Developer & Designer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="#about" class="tab active" data-tab="about">About Me</a></li>
+                <li><a href="#projects" class="tab" data-tab="projects">Projects</a></li>
+                <li><a href="#resume" class="tab" data-tab="resume">Resume</a></li>
+                <li><a href="#contact" class="tab" data-tab="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <!-- Replace with your actual image -->
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer with expertise in creating responsive, user-friendly websites. I focus on clean code and intuitive design.</p>
+                    <p>With a background in [Your Background], I bring a unique perspective to my development work.</p>
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image placeholder"></div>
+                    <h3>Project One</h3>
+                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-links">
+                        <a href="#" class="button">View Live</a>
+                        <a href="#" class="button">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image placeholder"></div>
+                    <h3>Project Two</h3>
+                    <p>A web application built with React and Node.js.</p>
+                    <div class="project-links">
+                        <a href="#" class="button">View Live</a>
+                        <a href="#" class="button">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image placeholder"></div>
+                    <h3>Project Three</h3>
+                    <p>An e-commerce platform with payment integration.</p>
+                    <div class="project-links">
+                        <a href="#" class="button">View Live</a>
+                        <a href="#" class="button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="more-projects">
+                <a href="#" class="button large">See More Projects</a>
+            </div>
+        </section>
+
+        <section id="resume" class="tab-content">
+            <h2>Resume</h2>
+            
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p class="resume-place">University Name</p>
+                    <p class="resume-date">2018 - 2022</p>
+                    <p>Graduated with honors. Focused on web development and software engineering.</p>
+                </div>
+            </div>
+            
+            <div class="resume-section">
+                <h3>Work Experience</h3>
+                <div class="resume-item">
+                    <h4>Web Developer</h4>
+                    <p class="resume-place">Company Name</p>
+                    <p class="resume-date">2022 - Present</p>
+                    <p>Develop and maintain client websites. Collaborate with design team to implement responsive layouts.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Web Design Intern</h4>
+                    <p class="resume-place">Agency Name</p>
+                    <p class="resume-date">2021 - 2022</p>
+                    <p>Assisted senior developers in building websites for clients. Created UI components and implemented responsive designs.</p>
+                </div>
+            </div>
+            
+            <div class="resume-section">
+                <h3>Certifications</h3>
+                <div class="resume-item">
+                    <h4>Front-End Web Development</h4>
+                    <p class="resume-place">Certification Provider</p>
+                    <p class="resume-date">2020</p>
+                </div>
+            </div>
+            
+            <div class="resume-download">
+                <a href="#" class="button large"><i class="fas fa-download"></i> Download Full Resume</a>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm currently available for freelance work and full-time positions. Feel free to reach out!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>City, Country</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
