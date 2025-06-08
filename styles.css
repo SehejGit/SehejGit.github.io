@@ -1,6 +1,6 @@
 /* Sky Blue Theme Colors */
 :root {
-    --primary-color: #75c6ef; /* Sky blue */
+    --primary-color: #75c6ef;
     --primary-dark: #4a9fd8;
     --primary-light: #a8e0ff;
     --bg-color: #f0f8ff;
@@ -205,7 +205,12 @@ section h2 {
 
 .project-image {
     height: 180px;
-    background-color: var(--primary-light);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
 }
 
 .project-card h3 {
